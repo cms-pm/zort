@@ -1,0 +1,43 @@
+[gd_scene load_steps=9 format=3 uid="uid://biiyowr8vq5gx"]
+
+[ext_resource type="Script" uid="uid://nax6j0ucbynv" path="res://scripts/main_pool_integration.gd" id="1_nxtc6"]
+[ext_resource type="Script" uid="uid://bayjx54srmam4" path="res://scripts/main_background.gd" id="1_rvslj"]
+[ext_resource type="Script" uid="uid://f8dnclg641rx" path="res://scripts/camera_script.gd" id="1_vcsgt"]
+[ext_resource type="Texture2D" uid="uid://dqhf062hgs10p" path="res://assets/textures/texture_02.png" id="2_0bbpv"]
+[ext_resource type="Script" uid="uid://bl4a1jf3ulgib" path="res://scripts/player_controller.gd" id="3_0bbpv"]
+[ext_resource type="Texture2D" uid="uid://omtolo3a7mtk" path="res://assets/sprites/sloth.png" id="4_rarhs"]
+[ext_resource type="Script" uid="uid://cqxs5h6bcxxa" path="res://scripts/pool_system/game_pool_setup.gd" id="7_q8u5g"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vcsgt"]
+radius = 71.13
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_nxtc6")
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
+position_smoothing_enabled = true
+script = ExtResource("1_vcsgt")
+target = NodePath("../Player")
+
+[node name="background_texture" type="TextureRect" parent="."]
+offset_left = -5120.0
+offset_top = -5120.0
+offset_right = 5120.0
+offset_bottom = 5120.0
+texture = ExtResource("2_0bbpv")
+stretch_mode = 1
+script = ExtResource("1_rvslj")
+tile_texture = ExtResource("2_0bbpv")
+world_size = Vector2(10240, 10240)
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("3_0bbpv")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("4_rarhs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("CircleShape2D_vcsgt")
+
+[node name="PoolManager" type="Node" parent="."]
+script = ExtResource("7_q8u5g")

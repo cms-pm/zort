@@ -1,0 +1,34 @@
+# Godot 4+ specific ignores
+.godot/
+.import/
+
+# Godot-specific files to ignore
+*.tmp
+*.translation
+*.tres~
+*.tscn~
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build files
+export_presets.cfg
+*.pck
+*.zip
+*.dmg
+*.app
+*.exe
+
+# Project cleanup
+DELETE_ME/
