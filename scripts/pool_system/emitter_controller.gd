@@ -11,8 +11,8 @@ extends Node2D
 
 # Burst fire options
 @export var burst_mode: bool = true
-@export var burst_count: int = 3
-@export var burst_spread: float = 15.0
+@export var burst_count: int = 100
+@export var burst_spread: float = 45.0
 
 # Debug
 @export var projectile_lifetime: float = -1  # -1 = use default
