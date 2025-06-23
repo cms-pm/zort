@@ -123,7 +123,7 @@ This project represents my passion for **performance engineering** and **clean a
 
 - **GitHub Issues**: Questions, suggestions, or improvements welcome!
 - **Pull Requests**: Found a bug or have an optimization? Let's make it better together!
-- **Contact**: [Your contact info] - always happy to discuss game development or software engineering!
+- **Contact**: chris@pixelwise.digital - always happy to discuss game development or software engineering!
 
 ---
 
