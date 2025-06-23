@@ -32,3 +32,6 @@ export_presets.cfg
 
 # Project cleanup
 DELETE_ME/
+CLAUDE.md
+DEV_MODE_INSTRUCTIONS.md
+TROUBLESHOOTING_MEMORY.md
