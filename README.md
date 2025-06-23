@@ -86,7 +86,6 @@ scripts/pool_system/          # Core pooling architecture
 
 scenes/                      # Game scenes and components
 assets/                      # Sprites and textures
-DELETE_ME/Zenva/            # Reference implementation for comparison
 ```
 
 ## 🚦 Getting Started
